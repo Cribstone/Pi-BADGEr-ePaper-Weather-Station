@@ -26,8 +26,8 @@
 ## CONFIGURATION OPTIONS ##
 ###########################
 
-use_SUNN         = True                 # Enable updating SUNN (or compatible light display)
-SUNN_dev         = '/dev/ttyUSB0'       # SUNN USB-Serial Device Location
+use_SUNN         = False             # Enable updating SUNN (or compatible light display)
+SUNN_dev         = '/dev/ttyUSB1'       # SUNN USB-Serial Device Location
 SUNN_baud_rate   = 57600                # SUNN USB-Serial Baud Rate
 rain_trigger     = 30                   # Above this percentage probably of precipitation, show the rain alert
 rain_command     = '.a:3:0,0,10,0,500'  # Send this command when there is a rain alert
@@ -38,7 +38,7 @@ cold_command     = '.a:3:0,0,0,10,500'  # Send this command when there is a cold
 off_command      = '.a:3:0,0,0,0,500'   # If there are no special weather alerts, send this command
 
 use_BADGEr       = True
-BADGEr_dev       = '/dev/ttyUSB1'
+BADGEr_dev       = '/dev/ttyUSB0'
 BADGEr_baud_rate = 19200
 
 
